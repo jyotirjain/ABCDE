@@ -1,0 +1,67 @@
+[
+    {
+        "id":1,
+        "Date":"15/02/23",
+        "Invester":"Aditya N",
+        "Mode":"Offline",
+        "Amount":"30000"
+    },
+    {
+        "id":2,
+        "Date":"15/02/23",
+        "Invester":"Aditya N",
+        "Mode":"Offline",
+        "Amount":"30000"
+    },
+    {
+        "id":3,
+        "Date":"15/02/23",
+        "Invester":"Aditya N",
+        "Mode":"Offline",
+        "Amount":"30000"
+    },
+    {
+        "id":4,
+        "Date":"15/02/23",
+        "Invester":"Aditya N",
+        "Mode":"Offline",
+        "Amount":"30000"
+    },
+    {
+        "id":5,
+        "Date":"15/02/23",
+        "Invester":"Aditya N",
+        "Mode":"Offline",
+        "Amount":"30000"
+    },
+
+    {
+        "id":6,
+        "Date":"15/02/23",
+        "Invester":"Aditya N",
+        "Mode":"Offline",
+        "Amount":"30000"
+    },
+    {
+        "id":7,
+        "Date":"15/02/23",
+        "Invester":"Aditya N",
+        "Mode":"Offline",
+        "Amount":"30000"
+    },
+    {
+        "id":8,
+        "Date":"15/02/23",
+        "Invester":"Aditya N",
+        "Mode":"Offline",
+        "Amount":"30000"
+    },
+    {
+        "id":9,
+        "Date":"15/02/23",
+        "Invester":"Aditya N",
+        "Mode":"Offline",
+        "Amount":"30000"
+    }
+
+]

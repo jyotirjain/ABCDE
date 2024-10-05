@@ -1,0 +1,13 @@
+App {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.app{
+  display: flex;
+}
+
+

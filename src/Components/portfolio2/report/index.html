@@ -1,0 +1,963 @@
+
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+
+
+      .pdf-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.pdf-pdf {
+  width: 100%;
+  height: 792px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+.pdf-group1000004685 {
+  top: 0px;
+  left: 0px;
+  width: 612px;
+  height: 792px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.pdf-rectangle34624783 {
+  top: 0px;
+  left: 0px;
+  width: 612px;
+  height: 6px;
+  position: absolute;
+}
+.pdf-rectangle34624786 {
+  top: 786px;
+  left: 0px;
+  width: 612px;
+  height: 6px;
+  position: absolute;
+}
+.pdf-rectangle34624785 {
+  top: 6px;
+  left: 0px;
+  width: 612px;
+  height: 140px;
+  position: absolute;
+  border-color: rgba(199, 199, 199, 1);
+}
+.pdf-image226 {
+  top: 26px;
+  left: 16px;
+  width: 177px;
+  height: 30px;
+  position: absolute;
+}
+.pdf-group1000004647 {
+  top: 167px;
+  left: 28px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.pdf-companylogo3removebgpreview120 {
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.pdf-text {
+  top: 170px;
+  left: 59px;
+  color: rgba(51, 51, 51, 1);
+  width: 471px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-group1000004672 {
+  top: 210px;
+  left: 28px;
+  width: 553px;
+  height: 561px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.pdf-rectangle34624772 {
+  top: 0px;
+  left: 0px;
+  width: 553px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(221, 221, 221, 0.8666666746139526);
+  border-style: solid;
+  border-width: 1px;
+}
+.pdf-rectangle34624773 {
+  top: 27px;
+  left: 0px;
+  width: 553px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(221, 221, 221, 1);
+}
+.pdf-rectangle34624774 {
+  top: 54px;
+  left: 0px;
+  width: 553px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(221, 221, 221, 1);
+}
+.pdf-rectangle34624775 {
+  top: 81px;
+  left: 0px;
+  width: 553px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(221, 221, 221, 1);
+}
+.pdf-rectangle34624776 {
+  top: 108px;
+  left: 0px;
+  width: 553px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(221, 221, 221, 1);
+}
+.pdf-rectangle34624777 {
+  top: 135px;
+  left: 0px;
+  width: 553px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(221, 221, 221, 1);
+}
+.pdf-rectangle34624778 {
+  top: 162px;
+  left: 0px;
+  width: 553px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(221, 221, 221, 1);
+}
+.pdf-rectangle34624779 {
+  top: 189px;
+  left: 0px;
+  width: 553px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(221, 221, 221, 1);
+}
+.pdf-rectangle34624780 {
+  top: 216px;
+  left: 0px;
+  width: 553px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(221, 221, 221, 1);
+}
+.pdf-rectangle34624781 {
+  top: 243px;
+  left: 0px;
+  width: 553px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(221, 221, 221, 1);
+}
+.pdf-rectangle34624782 {
+  top: 270px;
+  left: 0px;
+  width: 553px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(221, 221, 221, 1);
+}
+.pdf-rectangle346247831 {
+  top: 270px;
+  left: 0px;
+  width: 553px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(221, 221, 221, 1);
+}
+.pdf-text02 {
+  top: 6px;
+  left: 14px;
+  color: rgba(37, 37, 37, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text04 {
+  top: 33px;
+  left: 389px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text06 {
+  top: 60px;
+  left: 389px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text08 {
+  top: 87px;
+  left: 389px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text10 {
+  top: 114px;
+  left: 389px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text12 {
+  top: 141px;
+  left: 389px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text14 {
+  top: 168px;
+  left: 389px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text16 {
+  top: 195px;
+  left: 389px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text18 {
+  top: 222px;
+  left: 389px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text20 {
+  top: 249px;
+  left: 389px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text22 {
+  top: 276px;
+  left: 389px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text24 {
+  top: 32px;
+  left: 14px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text26 {
+  top: 59px;
+  left: 14px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text28 {
+  top: 86px;
+  left: 14px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text30 {
+  top: 113px;
+  left: 14px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text32 {
+  top: 140px;
+  left: 14px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text34 {
+  top: 167px;
+  left: 14px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text36 {
+  top: 194px;
+  left: 14px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text38 {
+  top: 219px;
+  left: 14px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text40 {
+  top: 248px;
+  left: 14px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text42 {
+  top: 275px;
+  left: 14px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-rectangle34624784 {
+  top: 297px;
+  left: 0px;
+  width: 553px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(221, 221, 221, 1);
+}
+.pdf-text44 {
+  top: 303px;
+  left: 389px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text46 {
+  top: 302px;
+  left: 14px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-rectangle346247851 {
+  top: 325px;
+  left: 0px;
+  width: 553px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(221, 221, 221, 1);
+}
+.pdf-text48 {
+  top: 329px;
+  left: 389px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text50 {
+  top: 328px;
+  left: 14px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-rectangle346247861 {
+  top: 352px;
+  left: 0px;
+  width: 553px;
+  height: 27px;
+  position: absolute;
+  border-color: rgba(221, 221, 221, 1);
+}
+.pdf-text52 {
+  top: 356px;
+  left: 390px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text54 {
+  top: 357px;
+  left: 15px;
+  color: rgba(63, 63, 63, 1);
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text56 {
+  top: 391px;
+  left: 15px;
+  color: rgba(63, 63, 63, 1);
+  width: 520px;
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text58 {
+  top: 524px;
+  left: 15px;
+  color: rgba(110, 110, 110, 1);
+  width: 520px;
+  height: auto;
+  position: absolute;
+  font-size: 9px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16.06095314025879px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-line428 {
+  top: 0px;
+  left: 371px;
+  width: 377px;
+  height: 1px;
+  position: absolute;
+}
+.pdf-text60 {
+  top: 80px;
+  left: 28px;
+  color: rgba(77, 77, 77, 1);
+  width: 239px;
+  height: auto;
+  position: absolute;
+  font-size: 11px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text62 {
+  top: 100px;
+  left: 28px;
+  color: rgba(77, 77, 77, 1);
+  width: 249px;
+  height: auto;
+  position: absolute;
+  font-size: 11px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.pdf-text64 {
+  top: 112px;
+  left: 408px;
+  color: rgba(37, 37, 37, 1);
+  width: 173px;
+  height: auto;
+  position: absolute;
+  font-size: 11px;
+  font-style: Regular;
+  text-align: right;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+@media(max-width: 991px) {
+  .pdf-group1000004685 {
+    left: 0px;
+    right: 0px;
+    margin: auto;
+  }
+}
+@media(max-width: 767px) {
+  .pdf-pdf {
+    height: 788px;
+  }
+  .pdf-group1000004685 {
+    top: -1px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+  }
+}
+
+:root {
+  --dl-color-gray-500: #595959;
+  --dl-color-gray-700: #999999;
+  --dl-color-gray-900: #D9D9D9;
+  --dl-size-size-large: 144px;
+  --dl-size-size-small: 48px;
+  --dl-color-danger-300: #A22020;
+  --dl-color-danger-500: #BF2626;
+  --dl-color-danger-700: #E14747;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-size-size-medium: 96px;
+  --dl-size-size-xlarge: 192px;
+  --dl-size-size-xsmall: 16px;
+  --dl-space-space-unit: 16px;
+  --dl-color-primary-100: #003EB3;
+  --dl-color-primary-300: #0074F0;
+  --dl-color-primary-500: #14A9FF;
+  --dl-color-primary-700: #85DCFF;
+  --dl-color-success-300: #199033;
+  --dl-color-success-500: #32A94C;
+  --dl-color-success-700: #4CC366;
+  --dl-size-size-xxlarge: 288px;
+  --dl-size-size-maxwidth: 1400px;
+  --dl-radius-radius-round: 50%;
+  --dl-space-space-halfunit: 8px;
+  --dl-space-space-sixunits: 96px;
+  --dl-space-space-twounits: 32px;
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius8: 8px;
+  --dl-space-space-fiveunits: 80px;
+  --dl-space-space-fourunits: 64px;
+  --dl-space-space-threeunits: 48px;
+  --dl-space-space-oneandhalfunits: 24px;
+}
+.button {
+  color: var(--dl-color-gray-black);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.input {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.textarea {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.list {
+  width: 100%;
+  margin: 1em 0px 1em 0px;
+  display: block;
+  padding: 0px 0px 0px 1.5rem;
+  list-style-type: none;
+  list-style-position: outside;
+}
+.list-item {
+  display: list-item;
+}
+.teleport-show {
+  display: flex !important;
+  transform: none !important;
+}
+.Heading {
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.Content {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="pdf-container">
+        <div class="pdf-pdf">
+          <div class="pdf-group1000004685">
+            <img
+              alt="Rectangle346247834384"
+              src="public/external/rectangle346247834384-rrbuh-200h.png"
+              class="pdf-rectangle34624783"
+            />
+            <img
+              alt="Rectangle346247864387"
+              src="public/external/rectangle346247864387-fika-200h.png"
+              class="pdf-rectangle34624786"
+            />
+            
+            <img
+              alt="image2264382"
+              src="public/external/image2264382-aty-200h.png"
+              class="pdf-image226"
+            />
+            <div class="pdf-group1000004647">
+              <img
+                alt="Companylogo3removebgpreview1204382"
+                src="public/external/companylogo3removebgpreview1204382-is1-200h.png"
+                class="pdf-companylogo3removebgpreview120"
+              />
+            </div>
+            <span class="pdf-text"><span>REPORT: IMMERSIVE LABZ</span></span>
+            <div class="pdf-group1000004672">
+              
+              <span class="pdf-text02"><span>Particulars</span></span>
+              <span class="pdf-text04"><span>₹ 50,000</span></span>
+              <span class="pdf-text06"><span>12</span></span>
+              <span class="pdf-text08"><span>₹ 50,000</span></span>
+              <span class="pdf-text10"><span>₹ 50,000</span></span>
+              <span class="pdf-text12"><span>₹ 50,000</span></span>
+              <span class="pdf-text14"><span>₹ 50,000</span></span>
+              <span class="pdf-text16"><span>₹ 50,000</span></span>
+              <span class="pdf-text18"><span>₹ 50,000</span></span>
+              <span class="pdf-text20"><span>₹ 50,000</span></span>
+              <span class="pdf-text22"><span>₹ 50,000</span></span>
+              <span class="pdf-text24"><span>Invested Amount</span></span>
+              <span class="pdf-text26"><span>Current Amount</span></span>
+              <span class="pdf-text28"><span>Date of Investment</span></span>
+              <span class="pdf-text30"><span>Mode of Investment</span></span>
+              <span class="pdf-text32"><span>Number of shares</span></span>
+              <span class="pdf-text34">
+                <span>Valuation when Invested</span>
+              </span>
+              <span class="pdf-text36"><span>Current Valuation</span></span>
+              <span class="pdf-text38"><span>Expected Valuation</span></span>
+              <span class="pdf-text40"><span>Revenue when Invested</span></span>
+              <span class="pdf-text42"><span>Current Revenue</span></span>
+              <span class="pdf-text44"><span>₹ 50,000</span></span>
+              <span class="pdf-text46">
+                <span>Annual Recurring Revenue</span>
+              </span>
+              <span class="pdf-text48"><span>₹ 50,000</span></span>
+              <span class="pdf-text50">
+                <span>Monthly Recurring Revenue</span>
+              </span>
+              <span class="pdf-text52"><span>₹ 50,000</span></span>
+              <span class="pdf-text54">
+                <span>Expected time for the startup to raise next round</span>
+              </span>
+              <span class="pdf-text56">
+                <span>Exit Strategy: Lorem impsum</span>
+              </span>
+              <span class="pdf-text58">
+                <span>
+                  Disclaimer: All the expected values are referenced or
+                  calculated by Bizdateup’s Financial team and are just for
+                  reference.
+                </span>
+              </span>
+              
+            </div>
+            <span class="pdf-text60">
+              <span>BIZDATEUP TECHNOLOGIES PVT LTD</span>
+            </span>
+            <span class="pdf-text62">
+              <span>
+                G2, Empire Business Centre, 414 Senapati Bapat Marg, Mumbai,
+                Maharashtra, 400013
+              </span>
+            </span>
+            <span class="pdf-text64"><span>support@bizdateup.com</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

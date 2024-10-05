@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "What is Bizdateup?",
+    "answer": "Bizdateup is a platform for early-stage startup investments that connects investors with promising startups."
+  },
+  {
+    "id": 2,
+    "question": "How does Bizdateup work?",
+    "answer": "Bizdateup offers a variety of investment options such as convertible notes, equity, and revenue sharing to investors. Investors can browse through the listed startups and invest in the one that aligns with their investment goals."
+  },
+  {
+    "id": 3,
+    "question": "How do I invest on Bizdateup?",
+    "answer": "To invest on Bizdateup, you need to create an account, complete the KYC process, and select a startup to invest in. You can then choose your investment option and the amount you want to invest."
+  },
+  {
+    "id": 4,
+    "question": "What is KYC?",
+    "answer": "KYC stands for Know Your Customer, a process through which we verify the identity of our investors to ensure the security of our platform."
+  },
+  {
+    "id": 5,
+    "question": "What are the different investment options available on Bizdateup?",
+    "answer": "The different investment options available on Bizdateup include convertible notes, equity, and revenue sharing."
+  },
+  {
+    "id": 6,
+    "question": "What is a convertible note?",
+    "answer": "A convertible note is a debt instrument that converts into equity in the future, usually upon the occurrence of a specified event."
+  },
+  {
+    "id": 7,
+    "question": "What is equity?",
+    "answer": "Equity represents ownership in a company. When you invest in a startup through equity, you own a percentage of the company and its assets."
+  },
+  {
+    "id": 8,
+    "question": "What is revenue sharing?",
+    "answer": "Revenue sharing is a type of investment in which investors receive a percentage of the company's revenue instead of ownership in the company."
+  },
+  {
+    "id": 9,
+    "question": "What is the minimum investment amount on Bizdateup?",
+    "answer": "The minimum investment amount on Bizdateup varies depending on the startup and the investment option chosen. However, the minimum amount is usually Rs 1,00,000."
+  },
+  {
+    "id": 10,
+    "question": "How do I track my investments on Bizdateup?",
+    "answer": "You can track your investments on Bizdateup by logging into your account and checking your investment portfolio."
+  },
+  {
+    "id": 11,
+    "question": "When do I receive returns on my investment?",
+    "answer": "The returns on your investment depend on the investment option chosen and the startup's performance. Usually, returns are realized when the startup is sold, goes public, or distributes dividends."
+  },
+  {
+    "id": 12,
+    "question": "Is my investment on Bizdateup guaranteed?",
+    "answer": "No, investing in startups is a high-risk investment. While Bizdateup performs due diligence on the listed startups, there is still a chance that you may lose your investment."
+  },
+  {
+    "id": 13,
+    "question": "How does Bizdateup select the startups listed on the platform?",
+    "answer": "Bizdateup selects startups that have a strong team, a clear business model, and the potential for growth. Startups go through a thorough vetting process before being listed on the platform."
+  },
+  {
+    "id": 14,
+    "question": "What fees does Bizdateup charge?",
+    "answer": "Bizdateup charges a convenience fee of 2% on successful investments made through the platform. The commission is fixed on the investment option chosen."
+  },
+  {
+    "id": 15,
+    "question": "What happens if a startup fails?",
+    "answer": "If a startup fails, the investors may lose their investment. However, Bizdateup works with the startups to ensure that they have a plan in place in case of failure."
+  },
+  {
+    "id": 16,
+    "question": "How long do startups stay listed on Bizdateup?",
+    "answer": "Startups stay listed on Bizdateup until they reach their funding goals or decide to delist from the platform."
+  },
+  {
+    "id": 17,
+    "question": "How often are new startups listed on Bizdateup?",
+    "answer": "New startups are listed on Bizdateup on a regular basis, depending on the availability of startups that meet our selection criteria."
+  },
+  {
+    "id": 18,
+    "question": "How can I contact Bizdateup if I have questions or concerns?",
+    "answer": "You can contact Bizdateup through our website's contact page or email us at support@bizdateup.com."
+  },
+  {
+    "id": 19,
+    "question": "What is the minimum age to invest on Bizdateup?",
+    "answer": "The minimum age to invest on Bizdateup is 18 years old."
+  },
+  {
+    "id": 20,
+    "question": "Can I invest from any country?",
+    "answer": "Investors from most countries are welcome on Bizdateup, subject to their local laws and regulations."
+  },
+  {
+    "id": 21,
+    "question": "How long does it take for my investment to reflect in my portfolio?",
+    "answer": "Your investment usually reflects in your portfolio within 24 hours after payment has been processed."
+  },
+  {
+    "id": 22,
+    "question": "Can I cancel my investment?",
+    "answer": "You can only cancel your investment within 24 hours of making the investment. After that, your investment is locked in until the startup either returns your investment or reaches its funding goal."
+  },
+  {
+    "id": 23,
+    "question": "How can I withdraw my investment?",
+    "answer": "You can only withdraw your investment if the startup has failed to meet its funding goal within the specified time frame. In such cases, your investment will be refunded to your account."
+  },
+  {
+    "id": 24,
+    "question": "How can I get updates on the startups I have invested in?",
+    "answer": "You will receive regular updates on the startups you have invested in through your investment portfolio."
+  },
+  {
+    "id": 25,
+    "question": "What happens if a startup raises more than its funding goal?",
+    "answer": "If a startup raises more than its funding goal, the additional funds will be used to further develop the business."
+  },
+  {
+    "id": 26,
+    "question": "Can I invest in multiple startups?",
+    "answer": "Yes, you can invest in multiple startups on Bizdateup."
+  },
+  {
+    "id": 27,
+    "question": "How does Bizdateup ensure the security of my personal and financial information?",
+    "answer": "Bizdateup takes the security of our investors' personal and financial information very seriously. We use industry-standard security measures to protect our platform and your information."
+  },
+  {
+    "id": 28,
+    "question": "Can I sell my investment?",
+    "answer": "Currently, You cannot sell your investment on Bizdateup. However, you can transfer your investment to another investor if both parties agree and notify Bizdateup."
+  }
+]

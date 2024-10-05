@@ -1,0 +1,34 @@
+figma name and its rought
+
+   figma name             rougnt
+   
+landing page 1         -     "/"
+login page             -     "/Login"
+signup                 -     "/signup"
+signup with otp        -     "/Otp"
+login page             -     "/Startup/login " 
+signup                 -     "/Startup/signup"
+signup with otp        -     "/Startup/otp"
+signup form            -     "/Startup/form" 
+startup profile        -     "/Profile/"
+dashboard startup      -     "/Startup/dashboard" 
+accelator dashbord     -     "/Startup/Accelarator" 
+policy                 -     "/PrivacyandPolicy"
+                       -     "/CancelPolicy"
+                       -     "/refundpolicy"
+                       -     "/Riskinvestment"  
+                       -     "/Terms"     
+contacts               -     "/Contactus" 
+profile general detail -     "/layoutprofile" 
+kyc page               -      "/kyc"
+bank detail screen     -     "/bankdetail" 
+other                  -     "/others" 
+prince dashboard       -     "/dashboard" 
+super admn             -     "/statistics" 
+master data            -     "/master_data" 
+Investers              -     "/invester" 
+startups               -     "/startups" 
+startups               -     "/accelarators" 
+
+
+                                                                                                               

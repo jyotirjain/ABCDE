@@ -1,0 +1,357 @@
+import React, { PureComponent } from "react";
+import "./styles.css";
+import axios from "axios";
+import ReactPaginate from "react-paginate";
+
+import DetailModal from "./DetailModal";
+import DocumentModal from "./DocumentModal";
+import API from "../../Apis/startupApis";
+
+// import { CSVLink } from "react-csv";
+
+import { BsSearch } from "react-icons/bs";
+
+export class Startup extends PureComponent {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      offset: 0,
+      tableData: [],
+      orgtableData: [],
+      perPage: 10,
+      currentPage: 0,
+      isApproved: null,
+    };
+    this.handlePageClick = this.handlePageClick.bind(this);
+  }
+
+  handlePageClick = (e) => {
+    const selectedPage = e.selected;
+    const offset = selectedPage * this.state.perPage;
+
+    this.setState(
+      {
+        currentPage: selectedPage,
+        offset: offset,
+      },
+      () => {
+        this.loadMoreData();
+      }
+    );
+  };
+
+  loadMoreData() {
+    const data = this.state.orgtableData;
+
+    const slice = data.slice(
+      this.state.offset,
+      this.state.offset + this.state.perPage
+    );
+
+    this.setState({
+      pageCount: Math.ceil(data.length / this.state.perPage),
+      tableData: slice,
+    });
+  }
+
+  componentDidMount() {
+    this.getData();
+  }
+
+  getData() {
+    axios.get(`${process.env.REACT_APP_TEST_URL}${process.env.REACT_APP_LINK_VERSION}/startup`).then((res) => {
+      
+      var data = res.data.data.data;
+
+      var slice = data.slice(
+        this.state.offset,
+        this.state.offset + this.state.perPage
+      );
+
+      this.setState({
+        pageCount: Math.ceil(data.length / this.state.perPage),
+        orgtableData: res.data,
+        tableData: slice,
+      });
+    });
+  }
+
+  handleViewClick(id) {
+    // alert(id);
+
+    
+  }
+
+  componentDidUpdate(prevState) {
+    if (this.state.isApproved !== prevState.isApproved) {
+      
+    }
+  }
+
+  async handleApprovedClick(id) {
+    const data = {
+      id: id,
+      action: "accepted",
+    };
+    const res = await API.action(data);
+    
+    
+    this.getData();
+
+    if (res.code === 200) {
+      this.setState({
+        isApproved: true,
+        // action: "accepted",
+      });
+      
+    }
+  }
+
+  async handleRejectClick(id) {
+    const data = {
+      id: id,
+      action: "rejected",
+    };
+    const res = await API.action(data);
+    
+    
+    this.getData();
+
+    if (res.code === 200) {
+      this.setState({
+        isApproved: false,
+        // action: "rejected",
+      });
+      
+    }
+  }
+
+  async handleDeleteClick(id) {
+    const data = {
+      id: id,
+    };
+    const res = await API.delete(data);
+    
+    
+  }
+
+  render() {
+    return (
+      <>
+        <section>
+          <div className=" md:ml-[25px] md:w-[808px] w-[100%] rounded-[20px]  ">
+            <div className="mb-[20px]">
+              <div className="flex justify-between items-center  ">
+                <div className="relative  w-[60%] text-gray-600 mr-[5px]">
+                  <input
+                    type="search"
+                    name="serch"
+                    placeholder="Search here"
+                    className="bg-white h-[40px] w-full px-5 pr-10  rounded-[10px] text-sm focus:outline-none"
+                  />
+                  <button
+                    type="submit"
+                    className="absolute right-[12px] top-[10px] "
+                  >
+                    <div className="h-4 w-4 fill-current ">
+                      <BsSearch />
+                    </div>
+                  </button>
+                </div>
+                <div className="w-[20%] mx-[7px]">
+                  <div className="w-full">
+                    <input
+                      type="filter"
+                      className="bg-white h-[40px] w-full px-5 pr-10  rounded-[10px] text-sm focus:outline-none"
+                    />
+                  </div>
+                </div>
+                <div className="w-[20%]  ml-[5px]">
+                  <div>
+                    <button className="bg-[#202054] text-[#ffffff] md:px-6 md:py-[7px] py-[9px] px-12 rounded-[10px] hover:bg-black duration-200">
+                      {/* <CSVLink>Export</CSVLink> */}
+                      <h4 className="px-[30px]"> Export</h4>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white md:w-[808px] w-[100%] md:rounded-[20px] pt-[15px] pb-[25px] ">
+              <div className="md:px-[20px] px-[15px] py-[20px] ">
+                <div className="w-[100%]">
+                  <div className="w-[100%] ">
+                    <div className=" overflow-x-auto">
+                      <table border="1" className="w-[100%] text-start ">
+                        <thead>
+                          <tr>
+                            <th className="py-[30px] px-[30px] border-[1px]">
+                              Id
+                            </th>
+                            <th className="px-[10px] py-[30px] border-[1px]">
+                              First name
+                            </th>
+                            <th className="px-[10px] py-[30px] border-[1px]">
+                              Last name
+                            </th>
+                            <th className="px-[15px] py-[30px] border-[1px]">
+                              Role
+                            </th>
+                            <th className="px-[10px] py-[30px] border-[1px]">
+                              Email
+                            </th>
+                            <th className="px-[15px] py-[30px] border-[1px]">
+                              Phone Number
+                            </th>
+                            <th className="px-[15px] py-[30px] border-[1px]">
+                              Gender
+                            </th>
+                            <th className="px-[15px] py-[30px] border-[1px]">
+                              Number
+                            </th>
+                            <th className="px-[15px] py-[30px] border-[1px]">
+                              Target
+                            </th>
+                            <th className="px-[15px] py-[30px] border-[1px]">
+                              Company based in
+                            </th>
+                            <th className="px-[15px] py-[30px] border-[1px]">
+                              Details
+                            </th>
+                            <th className="px-[15px] py-[30px] border-[1px]">
+                              Document
+                            </th>
+                            <th className="px-[15px] py-[30px] border-[1px]">
+                              Investors
+                            </th>
+                            <th className="px-[15px] py-[30px] border-[1px]">
+                              Action
+                            </th>
+                            <th className="px-[15px] py-[30px] border-[1px]">
+                              Action
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {this.state.tableData.map((tdata, i) => (
+                            <tr key={i}>
+                              <td className="border-[1px] px-[25px]">{i+1}</td>
+                              <td className="border-[1px] px-[40px] text-[13.33px] font-[400] leading-[15.62px] text-[#828F99]">
+                                {tdata.founderFirstName}
+                              </td>
+                              <td className=" border-[1px] px-[40px]  text-[13.33px] font-[400] leading-[15.62px] text-[#828F99]">
+                                {tdata.founderLastName}
+                              </td>
+                              <td className="border-[1px] px-[40px]  text-[13.33px] font-[400] leading-[15.62px] text-[#828F99]">
+                                {tdata.role}
+                              </td>
+                              <td className="border-[1px] px-[40px]  text-[13.33px] font-[400] leading-[15.62px] text-[#828F99]">
+                                {tdata.email}
+                              </td>
+                              <td className="border-[1px] px-[50px]  text-[13.33px] font-[400] leading-[15.62px] text-[#828F99]">
+                                {tdata.phone}
+                              </td>
+                              <td className="border-[1px] px-[40px]  text-[13.33px] font-[400] leading-[15.62px] text-[#828F99]">
+                                Male
+                              </td>
+                              <td className="border-[1px] px-[40px]  text-[13.33px] font-[400] leading-[15.62px] text-[#828F99]">
+                                25454
+                              </td>
+                              <td className="border-[1px] px-[30px]  text-[13.33px] font-[400] leading-[15.62px] text-[#828F99]">
+                                2,000000
+                              </td>
+                              <td className="border-[1px] px-[60px]  text-[13.33px] font-[400] leading-[15.62px] text-[#828F99]">
+                                Mumbai
+                              </td>
+                              <td className="border-[1px] px-[20px]">
+                                <DetailModal data={tdata._id} />
+                              </td>
+                              <td className="border-[1px] px-[20px]">
+                                <DocumentModal data={tdata._id} />
+                              </td>
+                              <td className="border-[1px] px-[20px] ">
+                                <div className="bg-[#202054] text-[#ffffff] md:px-1 md:py-[7px] py-[9px] px-12 rounded-[10px] hover:bg-black duration-200">
+                                  <h4
+                                    className="px-[25px] text-[11.2px]"
+                                    onClick={() =>
+                                      this.handleViewClick(tdata._id)
+                                    }
+                                  >
+                                    View
+                                  </h4>
+                                </div>
+                              </td>
+                              <td className="flex justify-between items-center py-[25px] border-[1px] px-[20px]">
+                                {tdata.status === "pending" ? (
+                                  <>
+                                    <div className="bg-[#202054] text-[#ffffff] mx-[5px] md:px-1 md:py-[7px] py-[9px] px-12 rounded-[10px] hover:bg-black duration-200">
+                                      <h4
+                                        className="px-[25px] text-[11.2px]"
+                                        onClick={() =>
+                                          this.handleApprovedClick(tdata._id)
+                                        }
+                                      >
+                                        Approved
+                                      </h4>
+                                    </div>
+                                    <div className="bg-[#202054] text-[#ffffff] mx-[5px] md:px-1 md:py-[7px] py-[9px] px-12 rounded-[10px] hover:bg-black duration-200">
+                                      <h4
+                                        className="px-[25px] text-[11.2px]"
+                                        onClick={() =>
+                                          this.handleRejectClick(tdata._id)
+                                        }
+                                      >
+                                        Reject
+                                      </h4>
+                                    </div>
+                                  </>
+                                ) : (
+                                  <div>
+                                    <h4>{tdata.status}</h4>
+                                  </div>
+                                )}
+                              </td>
+                              <td className="border-[1px] px-[20px]">
+                                <div className="bg-[#202054] text-[#ffffff] md:px-1 md:py-[7px] py-[9px] px-12 rounded-[10px] hover:bg-black duration-200">
+                                  <h4
+                                    className="px-[25px] text-[11.2px]"
+                                    onClick={() =>
+                                      this.handleDeleteClick(tdata._id)
+                                    }
+                                  >
+                                    Delete
+                                  </h4>
+                                </div>
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="mt-[50px]">
+                      <ReactPaginate
+                        previousLabel={"prev"}
+                        nextLabel={"next"}
+                        breakLabel={"..."}
+                        breakClassName={"break-me"}
+                        pageCount={this.state.pageCount}
+                        marginPagesDisplayed={2}
+                        pageRangeDisplayed={5}
+                        onPageChange={this.handlePageClick}
+                        containerClassName={"pagination"}
+                        subContainerClassName={"pages pagination"}
+                        activeclassname={"active"}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </>
+    );
+  }
+}
+
+export default Startup;

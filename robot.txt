@@ -1,0 +1,46 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+
+Allow: /Report
+Allow: /accelarators
+Allow: /Startup/signup
+Allow: /signup
+Allow: /pdfTester
+Allow: /privacy_policy
+Allow: /cancel_policy
+Allow: /refund_policy
+Allow: /risk_investment
+Allow: /terms_of_use
+Allow: /shipanddelivery
+Allow: /ordersummary
+Allow: /Contactus
+Allow: /noportfolio
+Allow: /press
+Allow: /learn/
+Allow: /calculators/
+Allow: /about-us
+Allow: /closed-deals
+Allow: /Startup_update
+Allow: /blogs/
+Allow: /news
+Allow: /raisefund
+Allow: /startupname
+Allow: /faq
+Allow: /approve
+Allow: /startup/wait-for-approve
+Allow: /thankyou
+Allow: /startup_update_details/
+Allow: /noportfolio
+Allow: /events
+Allow: /eventsdetails
+
+Disallow: /
+
+User-agent: Googlebot-Image
+Allow: /public/
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /*.pdf$
